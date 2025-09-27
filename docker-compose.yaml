@@ -1,0 +1,17 @@
+services:
+  artportfolio:
+    build: .
+    container_name: artportfolio
+    #ports:
+    # - "3000:3000"
+    restart: unless-stopped
+    hostname: artportfolio
+    environment:
+      - NODE_ENV=production
+      - PORT=3002
+      - HOSTNAME=0.0.0.0
+
+networks:
+  default:
+    name: local
+    external: true
