@@ -18,9 +18,10 @@ export default function HomePage() {
 
         {/* Navigation Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <Card title="🛠 Programming Projects" href="/projects" />
-          <Card title="🔬 Research" href="/research" />
-          <Card title="💫 Art" href="/art" />
+          <Card title="✨ Poetry" href="/poetry" />
+          <Card title="📷 Photography" href="/photography" />
+          <Card title="🎨 Paintings" href="/paintings" />
+          <Card title="✏️ Sketches" href="/sketches" />
           <Card title="👩‍💻 About Me" href="/about" />
         </div>
       </section>

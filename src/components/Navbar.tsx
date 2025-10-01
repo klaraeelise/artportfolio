@@ -6,9 +6,10 @@ export default function Navbar() {
       <div className="max-w-screen-xl mx-auto flex gap-8 justify-center">
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
-        <Link href="/projects">Projects</Link>
-        <Link href="/research">Research</Link>
-        <Link href="/art">Art</Link>
+        <Link href="/poetry">Poetry</Link>
+        <Link href="/photography">Photography</Link>
+        <Link href="/paintings">Paintings</Link>
+        <Link href="/sketches">Sketches</Link>
       </div>
     </nav>
   );
