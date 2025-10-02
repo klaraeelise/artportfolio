@@ -1,5 +1,5 @@
 import { wildlifeImages } from '@/data/photos/wildlife';
-import PhotographyGallery from '@/components/PhotographyGallery';
+import Gallery from '@/components/Gallery';
 import Link from 'next/link';
 
 export default function WildlifePage() {
@@ -11,7 +11,7 @@ export default function WildlifePage() {
         </Link>
         <span style={{ marginLeft: 16, fontWeight: 'bold' }}>Wildlife</span>
       </nav>
-      <PhotographyGallery images={wildlifeImages} />
+      <Gallery images={wildlifeImages} />
     </main>
   );
 }
