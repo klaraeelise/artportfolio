@@ -1,17 +1,17 @@
-import { wildlifeImages } from '@/data/photos/wildlife';
-import PhotographyGallery from '@/components/PhotographyGallery';
+import { peopleImages } from '@/data/photos/people';
+import Gallery from '@/components/Gallery';
 import Link from 'next/link';
 
-export default function WildlifePage() {
+export default function PeoplePage() {
   return (
     <main>
       <nav style={{ marginBottom: 24 }}>
         <Link href="/photography">
           &larr; Back to Categories
         </Link>
-        <span style={{ marginLeft: 16, fontWeight: 'bold' }}>Wildlife</span>
+        <span style={{ marginLeft: 16, fontWeight: 'bold' }}>People</span>
       </nav>
-      <PhotographyGallery images={wildlifeImages} />
+      <Gallery images={peopleImages} />
     </main>
   );
 }

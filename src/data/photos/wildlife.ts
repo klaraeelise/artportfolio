@@ -9,4 +9,10 @@ export const wildlifeImages = [
     thumbnail: "/photos/Seagull2_thumb.jpg",
     description: "Seagull flying over the ocean"
   },
+  // Add more wildlife images here:
+  // {
+  //   original: "/photos/your-image.jpg",
+  //   thumbnail: "/photos/your-image_thumb.jpg",
+  //   description: "Your description"
+  // },
 ];

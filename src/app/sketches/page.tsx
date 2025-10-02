@@ -1,3 +1,6 @@
+import { sketchImages } from '@/data/sketches/sketchesGallery';
+import Gallery from '@/components/Gallery';
+
 export default function SketchesPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16 text-foam space-y-12">
@@ -7,11 +10,15 @@ export default function SketchesPage() {
         Quick sketches, studies, and drawings capturing ideas and observations.
       </p>
 
-      <div className="bg-white/5 border border-kelp rounded-xl p-8 shadow-md backdrop-blur-sm">
-        <p className="text-foam/80 italic">
-          Gallery coming soon — stay tuned for sketches and line drawings.
-        </p>
-      </div>
+      {sketchImages.length > 0 ? (
+        <Gallery images={sketchImages} />
+      ) : (
+        <div className="bg-white/5 border border-kelp rounded-xl p-8 shadow-md backdrop-blur-sm">
+          <p className="text-foam/80 italic">
+            Gallery coming soon — stay tuned for sketches and line drawings.
+          </p>
+        </div>
+      )}
     </main>
   );
 }
