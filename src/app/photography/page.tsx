@@ -11,7 +11,7 @@ export default function PhotographyPage() {
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <Card title="🦁 Wildlife" href="/photography/wildlife" />
         <Card title="🌿 Nature" href="/photography/nature" />
-        <Card title="👥 People" href="/photography/people" />
+        <Card title="🎨 Artistic" href="/photography/artistic" />
       </section>
     </main>
   );

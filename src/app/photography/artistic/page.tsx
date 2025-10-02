@@ -9,7 +9,7 @@ export default function PeoplePage() {
         <Link href="/photography">
           &larr; Back to Categories
         </Link>
-        <span style={{ marginLeft: 16, fontWeight: 'bold' }}>People</span>
+        <span style={{ marginLeft: 16, fontWeight: 'bold' }}>Artistic</span>
       </nav>
       <Gallery images={peopleImages} />
     </main>

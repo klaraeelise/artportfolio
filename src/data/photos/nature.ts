@@ -2,17 +2,26 @@ export const natureImages = [
   {
     original: "/photos/NyAlesund1.jpeg",
     thumbnail: "/photos/NyAlesund1_thumb.jpeg",
-    description: "xx"
+    description: ""
   },
   {
-    original: "/photos/NyAlesund2.jpeg",
-    thumbnail: "/photos/NyAlesund2_thumb.jpeg",
-    description: "xx"
+    original: "/photos/NyAlesund2.png",
+    thumbnail: "/photos/NyAlesund2_thumb.png",
+    description: ""
   },
-  // Add more nature images here:
-  // {
-  //   original: "/photos/your-image.jpg",
-  //   thumbnail: "/photos/your-image_thumb.jpg",
-  //   description: "Your description"
-  // },
+  {
+    original: "/photos/NyAlesund3.png",
+    thumbnail: "/photos/NyAlesund3_thumb.png",
+    description: ""
+  },
+  {
+    original: "/photos/IceBergs.jpeg",
+    thumbnail: "/photos/IceBergs_thumb.jpeg",
+    description: ""
+  },
+  {
+    original: "/photos/Nature1.jpeg",
+    thumbnail: "/photos/Nature1_thumb.jpeg",
+    description: ""
+  },
 ];

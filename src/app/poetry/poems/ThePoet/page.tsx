@@ -17,9 +17,7 @@ export default function ThePoet() {
             \n
             I used to be a poet, \n
             and now I’m merely a writer\n
-                but the world - it’s so much brighter 
-            now, \n
-            and I’m happy for now, \n
+                but the world - it’s so much brighter \n
             it lies at my feet \n
             none, and yet all, expectations to meet\n
             I’m supposed to be happy,\n
