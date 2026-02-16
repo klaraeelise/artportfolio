@@ -22,6 +22,7 @@ export default function HomePage() {
           <Card title="📷 Photography" href="/photography" />
           <Card title="🎨 Paintings" href="/paintings" />
           <Card title="✏️ Sketches" href="/sketches" />
+          <Card title="🛍️ Shop" href="/shop" />
           <Card title="👩‍💻 About Me" href="/about" />
         </div>
       </section>

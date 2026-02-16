@@ -1,0 +1,148 @@
+export type ShopCategory = "painting" | "print" | "sketch" | "photo";
+
+export interface ShopItem {
+  id: string;
+  title: string;
+  category: ShopCategory;
+  price: number;
+  image: string;
+  thumbnail: string;
+  description: string;
+  dimensions: string;
+  medium: string;
+  available: boolean;
+  featured: boolean;
+}
+
+export const shopItems: ShopItem[] = [
+  {
+    id: "gold-shark",
+    title: "Golden Shark",
+    category: "painting",
+    price: 450,
+    image: "/paintings/Acrylic_GoldShark.png",
+    thumbnail: "/paintings/Acrylic_GoldShark_thumb.png",
+    description: "A stunning acrylic painting capturing the majestic beauty of a shark in shimmering gold tones. This piece brings the power and grace of the ocean's apex predator to life.",
+    dimensions: "24\" x 36\"",
+    medium: "Acrylic on canvas",
+    available: true,
+    featured: true,
+  },
+  {
+    id: "blue-whale",
+    title: "Blue Whale Majesty",
+    category: "painting",
+    price: 380,
+    image: "/paintings/Watercolour_Bluewhale.png",
+    thumbnail: "/paintings/Watercolour_Bluewhale_thumb.png",
+    description: "An elegant watercolour painting depicting the magnificent blue whale gliding through the depths. The soft, flowing watercolour technique captures the gentle nature of this ocean giant.",
+    dimensions: "20\" x 30\"",
+    medium: "Watercolour on paper",
+    available: true,
+    featured: true,
+  },
+  {
+    id: "orca-family",
+    title: "Orca Family",
+    category: "painting",
+    price: 380,
+    image: "/paintings/Watercolour_Orca.png",
+    thumbnail: "/paintings/Watercolour_Orca_thumb.png",
+    description: "A beautiful watercolour portrayal of orcas swimming together. The black and white contrast is softened by the watercolour medium, creating a serene underwater scene.",
+    dimensions: "20\" x 30\"",
+    medium: "Watercolour on paper",
+    available: true,
+    featured: false,
+  },
+  {
+    id: "narwhal-wonder",
+    title: "Narwhal Wonder",
+    category: "painting",
+    price: 380,
+    image: "/paintings/Watercolour_Narwhale.png",
+    thumbnail: "/paintings/Watercolour_Narwhale_thumb.png",
+    description: "A mystical watercolour painting of the elusive narwhal, often called the unicorn of the sea. The delicate brushwork captures its unique beauty.",
+    dimensions: "20\" x 30\"",
+    medium: "Watercolour on paper",
+    available: true,
+    featured: false,
+  },
+  {
+    id: "marine-dotted",
+    title: "Marine Dotted Pattern",
+    category: "painting",
+    price: 420,
+    image: "/paintings/Acrylic_MarineDotted.png",
+    thumbnail: "/paintings/Acrylic_MarineDotted_thumb.png",
+    description: "An abstract acrylic piece featuring intricate dotted patterns inspired by marine life. The vibrant colors and detailed work create a mesmerizing underwater world.",
+    dimensions: "24\" x 24\"",
+    medium: "Acrylic on canvas",
+    available: true,
+    featured: true,
+  },
+  {
+    id: "seagull-flight",
+    title: "Seagull in Flight",
+    category: "photo",
+    price: 150,
+    image: "/photos/Seagull2.jpg",
+    thumbnail: "/photos/Seagull2_thumb.jpg",
+    description: "A stunning photograph capturing a seagull soaring over the ocean. Available as a high-quality print, this image brings the freedom of coastal life to any space.",
+    dimensions: "16\" x 20\" (print)",
+    medium: "Digital print on archival paper",
+    available: true,
+    featured: false,
+  },
+  {
+    id: "arctic-fox",
+    title: "Arctic Fox Portrait",
+    category: "photo",
+    price: 180,
+    image: "/photos/ArcticFox.jpeg",
+    thumbnail: "/photos/ArcticFox_thumb.jpeg",
+    description: "A captivating portrait of an arctic fox in its natural habitat. This professional wildlife photograph showcases the stunning beauty of arctic wildlife.",
+    dimensions: "16\" x 20\" (print)",
+    medium: "Digital print on archival paper",
+    available: true,
+    featured: false,
+  },
+  {
+    id: "reindeer-wilderness",
+    title: "Reindeer in the Wilderness",
+    category: "photo",
+    price: 160,
+    image: "/photos/Reindeer1.jpeg",
+    thumbnail: "/photos/Reindeer1_thumb.jpeg",
+    description: "A beautiful photograph of a reindeer in its natural environment. This wildlife capture tells the story of life in the northern wilderness.",
+    dimensions: "16\" x 20\" (print)",
+    medium: "Digital print on archival paper",
+    available: true,
+    featured: false,
+  },
+  {
+    id: "landscape-mountains",
+    title: "Mountain Landscape",
+    category: "painting",
+    price: 320,
+    image: "/paintings/Acrylic_Landscape1.png",
+    thumbnail: "/paintings/Acrylic_Landscape1_thumb.png",
+    description: "An acrylic landscape painting showcasing majestic mountains. The bold colors and dramatic composition create a sense of awe and adventure.",
+    dimensions: "18\" x 24\"",
+    medium: "Acrylic on canvas",
+    available: true,
+    featured: false,
+  },
+  {
+    id: "penguin-colony",
+    title: "Penguin Colony",
+    category: "painting",
+    price: 380,
+    image: "/paintings/Watercolour_Penguins.png",
+    thumbnail: "/paintings/Watercolour_Penguins_thumb.png",
+    description: "A charming watercolour painting of penguins gathered together. The gentle medium perfectly captures the playful nature of these beloved birds.",
+    dimensions: "20\" x 30\"",
+    medium: "Watercolour on paper",
+    available: true,
+    featured: false,
+  },
+];
