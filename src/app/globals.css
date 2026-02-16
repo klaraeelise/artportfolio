@@ -16,7 +16,9 @@
   --color-moonlight: #b2eaff;    
   --color-jellyskin: #2ae2ff;    
   --color-sand: #f5f5f5;         
-  --color-foam: #e0f7fa;         
+  --color-foam: #e0f7fa;
+  --color-kelp: #0a5f7d;
+  --color-glow: #00e0ff;
 }
 
 @media (prefers-color-scheme: dark) {
