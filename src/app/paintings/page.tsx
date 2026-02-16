@@ -1,4 +1,4 @@
-// src/app/art/page.tsx
+// src/app/paintings/page.tsx
 
 import { paintingImages } from '@/data/paintings/paintingGallery';
 import Gallery from '@/components/Gallery';

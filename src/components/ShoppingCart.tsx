@@ -1,9 +1,7 @@
 'use client';
 
-import { useState } from "react";
-
 export default function ShoppingCart() {
-  const [cartCount] = useState(0);
+  const cartCount = 0; // Placeholder - will be connected to cart state management
 
   return (
     <div className="relative">

@@ -1,4 +1,4 @@
-// src/app/art/page.tsx
+// src/app/sketches/page.tsx
 
 import { sketchImages } from '@/data/sketches/sketchesGallery';
 import Gallery from '@/components/Gallery';
