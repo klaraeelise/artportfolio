@@ -4,13 +4,16 @@ import Link from 'next/link';
 
 export default function PeoplePage() {
   return (
-    <main>
-      <nav style={{ marginBottom: 24 }}>
-        <Link href="/photography">
-          &larr; Back to Categories
+    <main className="max-w-7xl mx-auto px-6 py-16 text-foam space-y-8">
+      <div className="flex items-center gap-4">
+        <Link 
+          href="/photography"
+          className="text-biolume hover:text-foam transition-colors"
+        >
+          ← Back to Categories
         </Link>
-        <span style={{ marginLeft: 16, fontWeight: 'bold' }}>Artistic</span>
-      </nav>
+        <h1 className="text-3xl font-serif font-bold text-foam">Artistic Photography</h1>
+      </div>
       <Gallery images={peopleImages} />
     </main>
   );
