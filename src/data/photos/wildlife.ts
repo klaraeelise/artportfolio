@@ -1,12 +1,12 @@
 export const wildlifeImages = [
   {
-    original: "/photos/Seagull1.jpg",
-    thumbnail: "/photos/Seagull1_thumb.jpg",
+    original: "/photos/Seagull1.jpeg",
+    thumbnail: "/photos/Seagull1_thumb.jpeg",
     description: "Seagull swimming on the ocean"
   },
   {
-    original: "/photos/Seagull2.jpg",
-    thumbnail: "/photos/Seagull2_thumb.jpg",
+    original: "/photos/Seagull2.jpeg",
+    thumbnail: "/photos/Seagull2_thumb.jpeg",
     description: "Seagull flying over the ocean"
   },
   {
