@@ -25,6 +25,14 @@ export default function ShopPage() {
           <p className="text-xl text-moonlight max-w-2xl mx-auto">
             Browse and purchase original artwork and high-quality prints
           </p>
+          <a
+            href="https://www.etsy.com/shop/klaraeelise"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 px-8 py-3 bg-biolume text-abyss rounded-full font-semibold text-lg transition-all duration-300 hover:bg-jellyskin hover:scale-105 shadow-lg hover:shadow-2xl"
+          >
+            🛍️ Visit My Etsy Shop
+          </a>
         </div>
 
         {/* Featured Section */}
