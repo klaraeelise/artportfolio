@@ -12,8 +12,11 @@ export interface ShopItem {
   medium: string;
   available: boolean;
   featured: boolean;
+  etsyUrl?: string; // Optional Etsy product listing URL
 }
 
+// TODO: Replace placeholder Etsy URLs with actual product listing URLs
+// Format: https://www.etsy.com/listing/YOUR_LISTING_ID/product-name
 export const shopItems: ShopItem[] = [
   {
     id: "gold-shark",
@@ -27,6 +30,7 @@ export const shopItems: ShopItem[] = [
     medium: "Acrylic on canvas",
     available: true,
     featured: true,
+    etsyUrl: "https://www.etsy.com/listing/1234567890/golden-shark-painting",
   },
   {
     id: "blue-whale",
@@ -40,6 +44,7 @@ export const shopItems: ShopItem[] = [
     medium: "Watercolour on paper",
     available: true,
     featured: true,
+    etsyUrl: "https://www.etsy.com/listing/1234567891/blue-whale-majesty",
   },
   {
     id: "orca-family",
@@ -53,6 +58,7 @@ export const shopItems: ShopItem[] = [
     medium: "Watercolour on paper",
     available: true,
     featured: false,
+    etsyUrl: "https://www.etsy.com/listing/1234567892/orca-family",
   },
   {
     id: "narwhal-wonder",
@@ -66,6 +72,7 @@ export const shopItems: ShopItem[] = [
     medium: "Watercolour on paper",
     available: true,
     featured: false,
+    etsyUrl: "https://www.etsy.com/listing/1234567893/narwhal-wonder",
   },
   {
     id: "marine-dotted",
@@ -79,6 +86,7 @@ export const shopItems: ShopItem[] = [
     medium: "Acrylic on canvas",
     available: true,
     featured: true,
+    etsyUrl: "https://www.etsy.com/listing/1234567894/marine-dotted-pattern",
   },
   {
     id: "seagull-flight",
@@ -92,6 +100,7 @@ export const shopItems: ShopItem[] = [
     medium: "Digital print on archival paper",
     available: true,
     featured: false,
+    etsyUrl: "https://www.etsy.com/listing/1234567895/seagull-in-flight-print",
   },
   {
     id: "arctic-fox",
@@ -105,6 +114,7 @@ export const shopItems: ShopItem[] = [
     medium: "Digital print on archival paper",
     available: true,
     featured: false,
+    etsyUrl: "https://www.etsy.com/listing/1234567896/arctic-fox-portrait-print",
   },
   {
     id: "reindeer-wilderness",
@@ -118,6 +128,7 @@ export const shopItems: ShopItem[] = [
     medium: "Digital print on archival paper",
     available: true,
     featured: false,
+    etsyUrl: "https://www.etsy.com/listing/1234567897/reindeer-in-the-wilderness-print",
   },
   {
     id: "landscape-mountains",
@@ -131,6 +142,7 @@ export const shopItems: ShopItem[] = [
     medium: "Acrylic on canvas",
     available: true,
     featured: false,
+    etsyUrl: "https://www.etsy.com/listing/1234567898/mountain-landscape-painting",
   },
   {
     id: "penguin-colony",
@@ -144,5 +156,6 @@ export const shopItems: ShopItem[] = [
     medium: "Watercolour on paper",
     available: true,
     featured: false,
+    etsyUrl: "https://www.etsy.com/listing/1234567899/penguin-colony-painting",
   },
 ];

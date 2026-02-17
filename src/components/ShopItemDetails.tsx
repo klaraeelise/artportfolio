@@ -3,16 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ShopItem } from "@/data/shop/shopItems";
-import { useState } from "react";
 
 export default function ShopItemDetails({ item }: { item: ShopItem }) {
-  const [added, setAdded] = useState(false);
-
-  const handleAddToCart = () => {
-    // Placeholder functionality - can be connected to real cart later
-    setAdded(true);
-    setTimeout(() => setAdded(false), 2000);
-  };
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-16 space-y-8">
@@ -79,20 +71,21 @@ export default function ShopItemDetails({ item }: { item: ShopItem }) {
             <p className="text-moonlight leading-relaxed">{item.description}</p>
           </div>
 
-          <button
-            onClick={handleAddToCart}
-            disabled={!item.available}
-            className={`w-full py-4 px-6 rounded-xl font-semibold text-lg transition-all duration-300 ${
-              item.available
+          <a
+            href={item.etsyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`w-full py-4 px-6 rounded-xl font-semibold text-lg transition-all duration-300 block text-center ${
+              item.available && item.etsyUrl
                 ? 'bg-biolume text-abyss hover:bg-jellyskin hover:scale-105 shadow-lg hover:shadow-2xl'
-                : 'bg-deepsea text-moonlight/50 cursor-not-allowed'
+                : 'bg-deepsea text-moonlight/50 cursor-not-allowed pointer-events-none'
             }`}
           >
-            {added ? '✓ Added to Cart!' : item.available ? '🛒 Add to Cart' : 'Out of Stock'}
-          </button>
+            {item.available && item.etsyUrl ? '🛍️ Buy on Etsy' : 'Out of Stock'}
+          </a>
 
           <p className="text-sm text-moonlight/60 text-center">
-            Free shipping on orders over $200
+            Secure checkout through Etsy
           </p>
         </div>
       </div>
