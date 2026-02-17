@@ -22,4 +22,3 @@ EXPOSE 3002
 
 # Use entrypoint script
 ENTRYPOINT ["docker-entrypoint.sh"]
-
