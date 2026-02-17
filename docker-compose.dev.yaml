@@ -1,0 +1,31 @@
+services:
+  artportfolio-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: artportfolio-dev
+    ports:
+      - "3002:3002"
+    restart: unless-stopped
+    hostname: artportfolio-dev
+    environment:
+      - NODE_ENV=development
+      - PORT=3002
+      - HOSTNAME=0.0.0.0
+      - WATCHPACK_POLLING=true  # Enable polling for file watching in Docker
+      - CHOKIDAR_USEPOLLING=true  # Alternative file watching method
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./next.config.ts:/app/next.config.ts
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./postcss.config.mjs:/app/postcss.config.mjs
+      - ./.next:/app/.next
+      - /app/node_modules  # Anonymous volume to prevent node_modules from being overwritten
+
+networks:
+  default:
+    name: local
+    external: true

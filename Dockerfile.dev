@@ -1,0 +1,16 @@
+FROM node:20-alpine
+WORKDIR /app
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV PORT=3002
+ENV HOSTNAME=0.0.0.0
+
+# Copy package files
+COPY package.json package-lock.json* ./
+
+# Install dependencies
+RUN npm ci
+
+# The source code will be mounted as a volume
+EXPOSE 3002
+
+CMD ["npm", "run", "dev"]
